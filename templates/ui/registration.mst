@@ -1,0 +1,40 @@
+
+<div class="container">
+    <h3 class="my-4">Registrazione utente</h3>
+
+    <form method="POST">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Username:</label>
+            <input required name="username" type="text" class="form-control" id="exampleFormControlInput1" placeholder="username">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput2" class="form-label">Nome:</label>
+            <input required name="nome" type="text" class="form-control" id="exampleFormControlInput2" placeholder="nome">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput3" class="form-label">Cognome:</label>
+            <input required name="cognome" type="text" class="form-control" id="exampleFormControlInput3" placeholder="cognome">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput4" class="form-label">Data di nascita:</label>
+            <input required name="data_nascita" type="date" class="form-control" id="exampleFormControlInput4" placeholder="data di nascita">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput5" class="form-label">Email:</label>
+            <input required name="email" type="email" class="form-control" id="exampleFormControlInput5" placeholder="name@example.com">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput6" class="form-label">Password:</label>
+            <input required name="password" type="password" class="form-control" id="exampleFormControlInput6" placeholder="password">
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-success">REGISTRATI</button>
+        </div>
+    </form>
+</div>

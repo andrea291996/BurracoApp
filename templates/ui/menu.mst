@@ -1,0 +1,86 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary ">
+  <div class="container-fluid">
+
+    {{#brand}}
+
+      <a class="navbar-brand" href="{{href}}">{{title}}</a>
+
+    {{/brand}}
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+  <!-- SINISTRA -->
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    {{#items}}
+      {{^isRight}}
+
+        {{^hasChilds}}
+          <li class="nav-item">
+            <a class="nav-link" href="{{href}}">{{title}}</a>
+          </li>
+        {{/hasChilds}}
+
+        {{#hasChilds}}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{{href}}" role="button" data-bs-toggle="dropdown">
+              {{title}}
+            </a>
+            <ul class="dropdown-menu">
+              {{#childs}}
+                {{^isDivider}}
+                  <li><a class="dropdown-item" href="{{href}}">{{title}}</a></li>
+                {{/isDivider}}
+                {{#isDivider}}
+                  <li><hr class="dropdown-divider"></li>
+                {{/isDivider}}
+              {{/childs}}
+            </ul>
+          </li>
+        {{/hasChilds}}
+
+      {{/isRight}}
+    {{/items}}
+  </ul>
+
+  <!-- DESTRA -->
+  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    {{#items}}
+      {{#isRight}}
+
+        {{^hasChilds}}
+          <li class="nav-item">
+            <a class="nav-link" href="{{href}}">{{title}}</a>
+          </li>
+        {{/hasChilds}}
+
+        {{#hasChilds}}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{{href}}" role="button" data-bs-toggle="dropdown">
+              {{title}}
+            </a>
+            <ul class="dropdown-menu">
+              {{#childs}}
+                {{^isDivider}}
+                  <li><a class="dropdown-item" href="{{href}}">{{title}}</a></li>
+                {{/isDivider}}
+                {{#isDivider}}
+                  <li><hr class="dropdown-divider"></li>
+                {{/isDivider}}
+              {{/childs}}
+            </ul>
+          </li>
+        {{/hasChilds}}
+
+      {{/isRight}}
+    {{/items}}
+  </ul>
+
+</div>
+
+  </div>
+</nav>

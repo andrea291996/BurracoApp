@@ -1,0 +1,20 @@
+
+<div class="container">
+    <h3 class="my-4">Accesso utente</h3>
+
+    <form method="POST" action="login">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email:</label>
+            <input required name="email" type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput2" class="form-label">Password:</label>
+            <input required name="password" type="password" class="form-control" id="exampleFormControlInput2" placeholder="password">
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-success">Sign in</button>
+        </div>
+    </form>
+</div>

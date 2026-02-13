@@ -1,0 +1,19 @@
+<div class="container">
+    <h3 class="my-4">Contatti</h3>
+
+    <form method="POST" action="contatti">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input required name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-success">Invia</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,9 @@
+    {{#carousel}}
+        {{{render}}}
+    {{/carousel}}
+<h1>Sono la home</h1>  
+<div class="container">
+    {{#content}}
+        {{{render}}} <h1>Sono la
+    {{/content}}
+</div>
