@@ -1,0 +1,23 @@
+<p>registrazione</p>
+
+    <label>
+        <input type="radio" name="tipologia-utente" value="giocatore" checked> Giocatore
+    </label>
+    <label>
+        <input type="radio" name="tipologia-utente" value="circolo"> Circolo
+    </label>
+
+<form id="form-giocatore" method="post" action="">
+    <input name="name" type="text" placeholder="Mario">
+    <input name="cognome" type="text" placeholder="Rossi">
+    <input name="email" type="email" placeholder="mario.rossi@esempio.it">
+    <input name="password" type="password" placeholder="password">
+    <button type="submit">registrati</button>
+</form>
+
+<form id="form-circolo" method="post" action="" style="display: none;">
+    <input name="name" type="text" placeholder="Circolo">
+    <input name="email" type="email" placeholder="circolo@esempio.it">
+    <input name="password" type="password" placeholder="password">
+    <button type="submit">registrati</button>
+</form>

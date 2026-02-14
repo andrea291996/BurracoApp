@@ -8,6 +8,7 @@ class UserRegistrationController extends Controller {
         $page = PageConfigurator::instance()->getPage();
         $page->setTitle("Registrazione Utente");
         $page->add("content", new UserRegistrationView());
+        $page->add("js", ["script"=>"templates/script/formRegistrazione.js"]);
         return $response;
     }
 

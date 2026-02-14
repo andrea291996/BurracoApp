@@ -1,0 +1,7 @@
+<p>accedi</p>
+<form method="post" action="">
+    <input name="name" type="text" placeholder="Mario">
+    <input name="password" type="password" placeholder="password">
+        <button type="submit">accedi</button>
+
+</form>

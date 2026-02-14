@@ -1,7 +1,7 @@
 <?php
 
 class AccountLoginView extends PageElement{
-    public function __construct($template= "ui/login", $data= []){
+    public function __construct($template= "ui/accesso", $data= []){
         parent::__construct($template, $data);  
     }
 }

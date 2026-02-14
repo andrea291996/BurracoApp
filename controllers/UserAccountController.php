@@ -22,10 +22,6 @@ class UserAccountController extends Controller {
             UIMessage::setError($errorMsg);
             return $response->withHeader("Location", "./login")->withStatus(301);
         }
-        $ur = new UserRoleHandler();
-        if($ur->isAdmin()){
-            UIMessage::setSuccess("Sei admin!");
-        }
         UIMessage::setSuccess(LOGIN_SUCCESS);
         return $response->withHeader("Location", "./")->withStatus(301);
     }

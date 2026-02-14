@@ -3,5 +3,5 @@
 <script src="assets/fontawesome/js/all.min.js"></script>
 
 {{#js}}
-
+    <script src={{script}}></script>
 {{/js}}
