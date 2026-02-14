@@ -1,0 +1,11 @@
+accountgiocatori
+    idgiocatore
+    nome
+    cognome
+    email
+    password
+accountcircoli
+    idcircolo
+    nome
+    email
+    password

@@ -1,7 +1,6 @@
 <p>accedi</p>
 <form method="post" action="">
-    <input name="name" type="text" placeholder="Mario">
+    <input name="email" type="email" placeholder="esempio@esempio.it">
     <input name="password" type="password" placeholder="password">
         <button type="submit">accedi</button>
-
 </form>
