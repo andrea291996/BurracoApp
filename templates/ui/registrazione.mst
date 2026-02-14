@@ -7,16 +7,16 @@
         <input type="radio" name="tipologia-utente" value="circolo"> Circolo
     </label>
 
-<form id="form-giocatore" method="post" action="">
-    <input name="name" type="text" placeholder="Mario">
+<form id="form-giocatore" method="post" action="registragiocatore">
+    <input name="nome" type="text" placeholder="Mario">
     <input name="cognome" type="text" placeholder="Rossi">
     <input name="email" type="email" placeholder="mario.rossi@esempio.it">
     <input name="password" type="password" placeholder="password">
     <button type="submit">registrati</button>
 </form>
 
-<form id="form-circolo" method="post" action="" style="display: none;">
-    <input name="name" type="text" placeholder="Circolo">
+<form id="form-circolo" method="post" action="registracircolo" style="display: none;">
+    <input name="nome" type="text" placeholder="Circolo">
     <input name="email" type="email" placeholder="circolo@esempio.it">
     <input name="password" type="password" placeholder="password">
     <button type="submit">registrati</button>

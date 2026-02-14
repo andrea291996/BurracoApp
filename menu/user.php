@@ -1,5 +1,5 @@
 <?php
-$username = $_SESSION['account']['username'];
+$username = $_SESSION['account']['nome'];
 $menu = [
     "brand"=>[
         "href"=>"./",

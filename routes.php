@@ -32,8 +32,12 @@ $routes['POST'] = [
         'callable' => 'ContattiController:post'
     ],
     [
-        'pattern' => '/registrazione',
-        'callable' => 'UserRegistrationController:registration',
+        'pattern' => '/registragiocatore',
+        'callable' => 'UserRegistrationController:registraGiocatore',
+    ],
+    [
+        'pattern' => '/registracircolo',
+        'callable' => 'UserRegistrationController:registraCircolo',
     ],
     [
         'pattern' => '/login',

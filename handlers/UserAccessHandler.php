@@ -24,13 +24,17 @@ class UserAccessHandler{
         }
 
         $enc = UserRegistrationHandler::encryptPassword($password);
-        $account = new Account();
-
+        $account = new Accountgiocatori();
         if($account->select(['email'=>$email, 'password'=>$enc])){
             $_SESSION['account'] = $account -> toArray();
         }else{
-            $this->last_errors[] = INVALID_EMAIL_OR_PASSWORD;
-            return false;
+            $account = new Accountcircoli();
+            if($account->select(['email'=>$email, 'password'=>$enc])){
+                $_SESSION['account'] = $account -> toArray();
+            }else{
+                $this->last_errors[] = INVALID_EMAIL_OR_PASSWORD;
+                return false;
+            }
         }
         return true;
     }
