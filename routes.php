@@ -21,16 +21,12 @@ $routes['GET'] = [
         'callable' => 'UserAccountController:logout',
     ],
     [
-        'pattern' => '/contatti',
-        'callable' => 'ContattiController:index'
+        'pattern' => '/profilo',
+        'callable' => 'ProfiloController:mostraProfilo',
     ]
 ];
 
 $routes['POST'] = [
-    [
-        'pattern' => '/contatti',
-        'callable' => 'ContattiController:post'
-    ],
     [
         'pattern' => '/registragiocatore',
         'callable' => 'UserRegistrationController:registraGiocatore',

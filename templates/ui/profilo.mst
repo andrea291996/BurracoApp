@@ -1,0 +1,7 @@
+<h1>profilo</h1>
+<p>Nome: {{getnome}}</p>
+{{#getcognome}}
+<p>Cognome: {{getcognome}}</p>
+{{/getcognome}}
+<p>Email: {{getemail}}</p>
+

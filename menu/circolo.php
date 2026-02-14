@@ -3,7 +3,7 @@ $username = $_SESSION['account']['nome'];
 $menu = [
     "brand"=>[
         "href"=>"./",
-        "title"=>"MVC"
+        "title"=>"Circolo"
     ],
     "items"=> [
             ["href"=>"./",

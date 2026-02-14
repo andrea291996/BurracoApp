@@ -7,7 +7,7 @@ class HomeController extends Controller{
     
     function home(Request $request, Response $response, $args) {    
         $page = PageConfigurator::instance()->getPage(); 
-        $page->setTitle("Lista prodotti");
+        $page->setTitle("BurracoApp");
         $page->add("content", new HomeView("ui/home"));
         return $response;
         }

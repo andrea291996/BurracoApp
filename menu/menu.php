@@ -3,7 +3,7 @@
 $menu = [
     'brand'=>[
         'href'=>"./",
-        'title'=>"Mio sito"
+        'title'=>"BurracoApp"
     ],
     'items'=> [
             ['href'=>"./",
