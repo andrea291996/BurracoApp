@@ -1,0 +1,8 @@
+<h1>selezione un compagno</h1>
+{{#compagni}}
+<div>
+{{getnome}}
+{{getcognome}}
+<button type="submit">Invia richiesta formazione squadra</button>
+{{/compagni}}
+</div>

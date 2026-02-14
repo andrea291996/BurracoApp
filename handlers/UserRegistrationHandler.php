@@ -16,6 +16,9 @@ class UserRegistrationHandler
         }
         $data['password']=self::encryptPassword($data['password']);
         $accountGiocatore = new Accountgiocatori();
+        $data['hascompagno'] = 0;
+        $data['hasrichieste'] = 0;
+        $data['hasinviatorichiesta'] = 0;
         $accountGiocatore->copy($data);
         
         $idGiocatore = $accountGiocatore->insert();

@@ -23,6 +23,10 @@ $routes['GET'] = [
     [
         'pattern' => '/profilo',
         'callable' => 'ProfiloController:mostraProfilo',
+    ],
+    [
+        'pattern' => '/squadra',
+        'callable' => 'SquadraController:squadra',
     ]
 ];
 

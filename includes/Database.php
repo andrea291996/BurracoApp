@@ -67,11 +67,14 @@ class Database{
     function buildWhere($where=[], &$bind=[]){
         $_where=[];
         foreach( $where as $col=>$v){
-            if(!is_array($v))
-            {
-                    $_where[]= $col." = ?";
-                    $bind[]=$v;
-            }
+            if($v === null) { // <--- AGGIUNGI QUESTO CONTROLLO
+            $_where[] = $col." IS NULL";
+        }
+        else if(!is_array($v))
+        {
+            $_where[]= $col." = ?";
+            $bind[]=$v;
+        }
             else{
                 if(count($v)==2) 
                 {
