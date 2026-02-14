@@ -14,12 +14,18 @@ class SquadraController extends Controller{
 
         //HO UN COMPAGNO
             //mostracompagno
+        if($idcompagno){
+            $accountcompagno = new Accountgiocatori();
+            $accountcompagno->select($account->getidcompagno());
+            $page->add("content", new SquadraView("ui/compagno", $accountcompagno));
+            return $response;
+        }
+            
+        //HO DELLE RICHIESTE
+            //mostrarichieste
 
         //HO INVIATO UNA RICHIESTA
             //mostra stato richiesta
-
-        //HO DELLE RICHIESTE
-            //mostrarichieste
         
         //NON HO RICHIESTE E NON HO COMPAGNI
             //mostra possiibili compagni 
