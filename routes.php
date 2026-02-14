@@ -27,6 +27,14 @@ $routes['GET'] = [
     [
         'pattern' => '/squadra',
         'callable' => 'SquadraController:squadra',
+    ],
+    [
+        'pattern' => '/modificaprofilogiocatore',
+        'callable' => 'ProfiloController:visualizzaPaginaModificaProfiloGiocatore',
+    ],
+    [
+        'pattern' => '/modificaprofilocircolo',
+        'callable' => 'ProfiloController:visualizzaPaginaModificaProfiloCircolo',
     ]
 ];
 
@@ -42,7 +50,16 @@ $routes['POST'] = [
     [
         'pattern' => '/login',
         'callable' => 'UserAccountController:doLogin',
+    ],
+    [
+        'pattern' => '/modificaprofilogiocatore',
+        'callable' => 'ProfiloController:modificaProfiloGiocatore',
+    ],
+    [
+        'pattern' => '/modificaprofilocircolo',
+        'callable' => 'ProfiloController:modificaProfiloCircolo',
     ]
+    
     
 ];
 

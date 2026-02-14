@@ -1,0 +1,6 @@
+<h1>modifica giocatore</h1>
+<form method="post" action="modificaprofilogiocatore">
+Indirizzo: <input type="text" name="indirizzo" value="{{getindirizzo}}">
+Distanza massima disposto a fare senza inquinare in metri: <input type="number" name="distanzamassima" value="{{getdistanzanoninquinanteinmetri}}">
+<button type="submit">Modifica</button>
+</form>

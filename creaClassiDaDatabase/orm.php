@@ -70,6 +70,6 @@ foreach($attributes as $k=>$attr){
 $template = "classOrm.mst";
 $engine = TemplateEngine::instance();
 $classStr = $engine->render($template,$data);
-file_put_contents("$class.php",$classStr);
+file_put_contents("../models/$class.php",$classStr);
 
 echo "End class builder".PHP_EOL;

@@ -1,0 +1,5 @@
+<h1>modifica circolo</h1>
+<form method="post" action="modificaprofilocircolo">
+Indirizzo: <input type="text" name="indirizzo" value="{{getindirizzo}}">
+<button type="submit">Modifica</button>
+</form>

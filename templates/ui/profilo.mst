@@ -5,3 +5,14 @@
 {{/getcognome}}
 <p>Email: {{getemail}}</p>
 
+{{#getcognome}}
+
+<a href="modificaprofilogiocatore">Modifica profilo giocatore<a>
+
+{{/getcognome}}
+
+{{^getcognome}}
+
+<a href="modificaprofilocircolo">Modifica profilo circolo<a>
+
+{{/getcognome}}
