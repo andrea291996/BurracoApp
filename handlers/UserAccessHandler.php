@@ -27,10 +27,12 @@ class UserAccessHandler{
         $account = new Accountgiocatori();
         if($account->select(['email'=>$email, 'password'=>$enc])){
             $_SESSION['account'] = $account -> toArray();
+            $_SESSION['account']['tipologia'] = "giocatore";
         }else{
             $account = new Accountcircoli();
             if($account->select(['email'=>$email, 'password'=>$enc])){
                 $_SESSION['account'] = $account -> toArray();
+                $_SESSION['account']['tipologia'] = "circolo";
             }else{
                 $this->last_errors[] = INVALID_EMAIL_OR_PASSWORD;
                 return false;
@@ -49,8 +51,8 @@ class UserAccessHandler{
         return implode(" - ",$this->last_errors);
     }
 
-    static function isLogged(){
-        return isset($_SESSION['account']);
+    static function tipologiaUtente(){
+        return $_SESSION['account']['tipologia'];
     }
 
     static function getCurrentUser(){

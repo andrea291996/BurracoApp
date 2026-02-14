@@ -4,8 +4,10 @@ class Menu extends PageElement{
 
     function __construct($template= "ui/menu", $data= []){
         if(count($data)==0){
-            if(UserAccessHandler::isLogged()){
-                include __DIR__."/../menu/user.php";
+            if(UserAccessHandler::tipologiaUtente() == "giocatore"){
+                include __DIR__."/../menu/giocatore.php";
+            }elseif(UserAccessHandler::tipologiaUtente() == "circolo"){
+                include __DIR__."/../menu/circolo.php";
             }else{
                 include __DIR__."/../menu/menu.php";
             }

@@ -1,0 +1,13 @@
+giocatore
+    a destra: 
+        profilo (visualizza e modifica)
+        squadra (se vuoto mi fa cercare il compagno)
+        le mie partite (se ci sono mi permette di inserire il punteggio)
+        logout
+    a sinistra:
+        classifica
+        calendario
+
+circolo
+    a destra:
+        profilo (visualizza e modifica)
